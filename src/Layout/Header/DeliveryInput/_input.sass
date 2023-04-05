@@ -1,0 +1,49 @@
+@import "../../../sass/vars"
+.delivery-wrap
+  order: 4
+  width: 100%
+  margin-top: 9px
+  position: relative
+  @media (width >= 768px)
+    order: 2
+    max-width: 264px
+    margin-top: 0
+    justify-content: space-between
+  @media (width >= 1200px)
+    max-width: 555px
+
+
+.delivery-input
+  background-color: $lightGrey
+  border-radius: 8px
+  width: 100%
+  padding: 18px 14px 18px 48px
+  border: none
+  order: 3
+  &::placeholder
+    font-family: 'Gilroy', sans-serif
+    font-weight: 400
+    font-size: 14px
+    line-height: 16px
+    color: #CFCFCF
+    @media (width >= 1200px)
+      font-size: 18px
+      line-height: 21
+
+
+.input-location
+  position: absolute
+  left: 14px
+  top: 15px
+  display: inline-block
+  @media (width >= 1200px)
+    top: 14px
+
+.input-search
+  position: absolute
+  display: inline-block
+  right: 15px
+  top: 15px
+  @media (width >= 1200px)
+    top: 14px
+

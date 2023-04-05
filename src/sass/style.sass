@@ -1,0 +1,29 @@
+@import "./reset"
+@import "./vars"
+@import "../fonts/gilroy/fonts_gilroy"
+@import "../Layout/Header/header"
+@import "../pages/Home/home"
+@import "../components/NavMenu/navMenu"
+@import "../components/Title/title"
+@import "../components/ProductCard/productCard"
+
+body
+  font-family: 'Gilroy', sans-serif
+  background: $grey
+  box-shadow: 0 30px 60px rgba(34, 31, 32, 0.2)
+
+.container
+  width: 100%
+  margin: 0 auto
+  @media (width >= 576)
+    width: 540px
+  @media (width >= 768)
+    width: 720px
+  @media (width >= 992)
+    width: 960px
+  @media (width >= 1200)
+    width: 1140px
+  @media (width >= 1400)
+    width: 1320px
+  @media (width >= 1600)
+    width: 1440px
