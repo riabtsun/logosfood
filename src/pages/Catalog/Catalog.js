@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from 'react'
+import { CustomContext } from '../../utils/Context'
 
 const Catalog = () => {
-  return <div></div>;
-};
+  const context = useContext(CustomContext)
+  return <div>{context.count}</div>
+}
 
-export default Catalog;
+export default Catalog

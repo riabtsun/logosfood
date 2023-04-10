@@ -1,23 +1,24 @@
 import Header from './Layout/Header/Header'
-import Begin from './pages/Home/Begin/Begin'
-import NavMenu from './components/NavMenu/NavMenu'
-import AllProducts from './pages/Home/AllProducts/AllProducts'
-import {BrowserRouter, Routes, Route, Link, useLocation} from "react-router-dom";
-import {useEffect} from "react";
+import { Routes, Route, Link } from 'react-router-dom'
 import './sass/style.sass'
+import Home from './pages/Home/Home'
+import Catalog from './pages/Catalog/Catalog'
+import Register from './pages/Register/Register'
 
 function App() {
-
-  // useEffect(()=>{
-  //   alert(` `)
-  // },[])
-
   return (
     <div className="App">
+      <div style={{ display: 'flex' }}>
+        <Link to="/">Home</Link>
+        <Link to="/catalog">Catalog</Link>
+        <Link to="/register">Register</Link>
+      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/catalog" element={<Catalog />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
       <Header />
-      <Begin />
-      <NavMenu />
-      <AllProducts />
     </div>
   )
 }
