@@ -25,15 +25,17 @@ const Header = () => {
         <div className="container">
           <div className="header-wrap">
             <Menu className="menuBtn" />
-            <Logo className="header-logo" color={'#fff'} />
+            <Link to="/">
+              <Logo className="header-logo" color={'#fff'} />
+            </Link>
             <DeliveryInput />
             <ContactsPhone />
             {user.email.length ? (
-              <Link to="/register">
+              <Link className="entryUser" to="/register">
                 <span>Войти</span>
               </Link>
             ) : (
-              <Link to="/register">
+              <Link className="entryUser" to="/login">
                 <span onClick={() => logOutUser()}>Выйти</span>
               </Link>
             )}

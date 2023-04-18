@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import Begin from './Begin/Begin'
 import NavMenu from '../../components/NavMenu/NavMenu'
 import AllProducts from './AllProducts/AllProducts'

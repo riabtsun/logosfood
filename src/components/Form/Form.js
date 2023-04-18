@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { FaPencilAlt } from 'react-icons/fa'
 import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai'
-import axios from 'axios'
+import axios from '../../utils/axios'
 import { CustomContext } from '../../utils/Context'
 
 const Form = () => {
@@ -11,7 +11,7 @@ const Form = () => {
   const [eye, setEye] = useState(false)
   const navigate = useNavigate()
 
-  const { user, setUser } = useContext(CustomContext)
+  const { setUser } = useContext(CustomContext)
 
   const registerUser = (e) => {
     e.preventDefault()
@@ -21,7 +21,7 @@ const Form = () => {
       password: e.target[0].value,
     }
     axios
-      .post('http://localhost:8080/register', newUser)
+      .post('/register', newUser)
       .then(({ data }) => {
         setUser({
           token: data.accessToken,
