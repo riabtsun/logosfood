@@ -1,0 +1,36 @@
+@import "../../sass/vars"
+.delivery
+  &__block
+    display: flex
+    flex-direction: column
+    width: 50%
+    gap: 10px
+  &__card
+    width: 100%
+    background: $greenGradient
+    font-weight: 500
+    font-size: 14px
+    line-height: 22px
+    color: $white
+    padding: 15px 25px 20px
+    border-radius: 10px
+    cursor: pointer
+    @media (width >= 992px)
+      width: 618px
+    &-title
+      display: flex
+      justify-content: space-between
+      align-items: center
+  &__desk
+    background: $greyGradient
+    border-radius: 0 0 10px 10px
+    width: 618px
+    padding: 20px
+    margin-top: -10px
+    @media (width >= 992px )
+      padding: 40px
+  &__text
+    font-weight: 400
+    font-size: 16px
+    line-height: 25px
+    color: $white

@@ -15,17 +15,17 @@ const Footer = () => {
           </p>
           <ul className="footer__privacies">
             <li>
-              <a href="#" className="footer__doc">
+              <a href="*" className="footer__doc">
                 Пользовательское соглашение
               </a>
             </li>
             <li>
-              <a href="#" className="footer__doc">
+              <a href="*" className="footer__doc">
                 Карта сайта
               </a>
             </li>
             <li>
-              <a href="#" className="footer__doc">
+              <a href="*" className="footer__doc">
                 Политика конфидециальности
               </a>
             </li>
@@ -39,7 +39,7 @@ const Footer = () => {
             </Link>
           </li>
           <li className="footer__item">
-            <Link to={'/'} className="footer__link">
+            <Link to={'/delivery'} className="footer__link">
               Условия доставки
             </Link>
           </li>

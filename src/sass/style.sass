@@ -4,6 +4,8 @@
 @import "../Layout/Header/header"
 @import "../Layout/Footer/footer"
 @import "../pages/Home/home"
+@import "../pages/Sales/sales"
+@import "../pages/Delivery/delivery"
 @import "../components/NavMenu/navMenu"
 @import "../components/Title/title"
 @import "../components/ProductCard/productCard"
@@ -14,18 +16,24 @@ body
   background: $grey
   box-shadow: 0 30px 60px rgba(34, 31, 32, 0.2)
 
+.layout
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  min-height: 100vh
+
 .container
   width: 100%
   margin: 0 auto
-  @media (width >= 576)
+  @media (width >= 576px)
     width: 540px
-  @media (width >= 768)
+  @media (width >= 768px)
     width: 720px
-  @media (width >= 992)
+  @media (width >= 992px)
     width: 960px
-  @media (width >= 1200)
+  @media (width >= 1200px)
     width: 1140px
-  @media (width >= 1400)
+  @media (width >= 1400px)
     width: 1320px
-  @media (width >= 1600)
+  @media (width >= 1600px)
     width: 1440px

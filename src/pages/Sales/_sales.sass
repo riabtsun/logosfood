@@ -1,0 +1,39 @@
+@import "../../sass/vars"
+
+.sales__row
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  gap: 20px
+  padding-bottom: 50px
+  @media (width >= 992px)
+    padding-bottom: 70px
+.sales__card
+  background: $greyGradient
+  border-radius: 10px
+  width: 345px
+  @media (width >= 992px)
+    width: 440px
+  &-img
+    border-radius: 10px 10px 0 0
+    width: 100%
+  &-text
+    padding: 15px 20px 15px 15px
+  &-title
+    font-weight: 700
+    font-size: 16px
+    line-height: 19px
+    color: $white
+    margin-bottom: 5px
+  &-about,
+  &-date
+    font-weight: 400
+    font-size: 12px
+    line-height: 14px
+    color: $greyText
+  &-date
+    color: $greenText
+    display: inline-block
+    margin-top: 20px
+
+
