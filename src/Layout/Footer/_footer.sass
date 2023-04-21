@@ -1,11 +1,16 @@
 @import "../../sass/vars"
 .footer
   background: linear-gradient(270.7deg, #44403F 0.4%, #211F20 100%)
-  padding: 28px 40px
+  padding: 28px 40px 48px
   display: flex
   &__block
-    @media (width > 992px)
+    @media (width >= 992px)
       margin-right: 86px
+    .header-logo
+      display: block
+      margin: 0 auto
+      @media (width >= 992px)
+        display: inline
   &__doc
     font-weight: 500
     font-size: 14px
@@ -27,7 +32,7 @@
     color: $whiteGrey
   &__menu
     display: none
-    @media (width > 992px)
+    @media (width >= 992px)
       display: flex
       justify-content: space-between
   &__item
@@ -38,3 +43,9 @@
     line-height: 24px
     color: $white
     text-decoration: none
+  &__privacies-item
+    text-align: center
+    margin-top: 13px
+    @media (width >= 992px)
+      text-align: start
+      margin-top: 0

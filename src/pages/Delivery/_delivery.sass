@@ -1,9 +1,23 @@
 @import "../../sass/vars"
 .delivery
+  &__media
+    display: flex
+    flex-direction: column-reverse
+    column-gap: 20px
+    @media (width >= 1200px)
+      flex-direction: row
+  .google-map
+    height: 290px
+    width: 100%
+    border-radius: 10px
+    border: none
+    margin-bottom: 40px
+    @media (width >= 1200px)
+      margin-bottom: 0
+      height: 610px
   &__block
     display: flex
     flex-direction: column
-    width: 50%
     gap: 10px
   &__card
     width: 100%
@@ -15,7 +29,7 @@
     padding: 15px 25px 20px
     border-radius: 10px
     cursor: pointer
-    @media (width >= 992px)
+    @media (width >= 1200px)
       width: 618px
     &-title
       display: flex
@@ -24,13 +38,39 @@
   &__desk
     background: $greyGradient
     border-radius: 0 0 10px 10px
-    width: 618px
-    padding: 20px
+    width: 100%
     margin-top: -10px
-    @media (width >= 992px )
-      padding: 40px
+    transition: .3s ease-in-out
+    height: 0
+    overflow: hidden
+    @media (width >= 1200px )
+      width: 618px
+  &__desk.open
+    height: auto
   &__text
     font-weight: 400
     font-size: 16px
     line-height: 25px
     color: $white
+    padding: 20px
+    @media (width >= 1200px )
+      padding: 40px
+  &__info
+    display: flex
+    flex-direction: column
+    margin-top: 40px
+    margin-bottom: 35px
+    &-title
+      font-weight: 700
+      font-size: 18px
+      line-height: 35px
+      color: $white
+      margin-bottom: 10px
+    &-text
+      font-weight: 400
+      font-size: 18px
+      line-height: 25px
+      color: $whiteGrey
+      display: inline-block
+      margin-bottom: 15px
+

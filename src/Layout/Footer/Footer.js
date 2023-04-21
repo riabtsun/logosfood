@@ -14,17 +14,17 @@ const Footer = () => {
             © ООО СК «АПШЕРОН» Все права защищены. 2010-2020
           </p>
           <ul className="footer__privacies">
-            <li>
+            <li className="footer__privacies-item">
               <a href="*" className="footer__doc">
                 Пользовательское соглашение
               </a>
             </li>
-            <li>
+            <li className="footer__privacies-item">
               <a href="*" className="footer__doc">
                 Карта сайта
               </a>
             </li>
-            <li>
+            <li className="footer__privacies-item">
               <a href="*" className="footer__doc">
                 Политика конфидециальности
               </a>

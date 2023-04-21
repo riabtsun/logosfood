@@ -1,23 +1,30 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import FaArrow from '../../assets/icnons/FaArrow'
 
-const DeliveryAccordeon = ({ item }) => {
-  const [active, setActive] = useState(false)
+const DeliveryAccordion = ({ item }) => {
+  const contentEl = useRef()
+  const [clicked, setClicked] = useState(false)
+
+  const showAnswer = () => {
+    setClicked((prev) => !prev)
+  }
 
   return (
     <>
-      <div
-        className="delivery__card"
-        onClick={() => setActive((prev) => !prev)}
-      >
+      <div className="delivery__card" onClick={showAnswer}>
         <p className="delivery__card-title">
           <span className="delivery__card-name">{item.title}</span>
           <FaArrow />
         </p>
       </div>
       <div
-        style={{ display: active ? 'block' : 'none' }}
-        className="delivery__desk"
+        ref={contentEl}
+        style={
+          clicked
+            ? { height: contentEl.current.scrollHeight }
+            : { height: '0px' }
+        }
+        className={`delivery__desk ${clicked && 'open'}`}
       >
         <p className="delivery__text">{item.answer}</p>
       </div>
@@ -25,4 +32,4 @@ const DeliveryAccordeon = ({ item }) => {
   )
 }
 
-export default DeliveryAccordeon
+export default DeliveryAccordion
