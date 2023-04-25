@@ -1,8 +1,8 @@
 @import "src/sass/vars"
 
-.navSlider
-  .swiper-slide
-    width: fit-content
+.navList
+  display: flex
+  justify-content: space-between
 
 .navLink
   font-weight: 500
@@ -12,5 +12,13 @@
   text-decoration: none
   margin-left: 20px
   display: inline-block
-  &:hover
-    border-bottom: 3px solid $green
+  position: relative
+  cursor: pointer
+  &:hover:before
+    content: ''
+    position: absolute
+    bottom: -26px
+    width: 100%
+    height: 3px
+    background-color: $green
+    left: 0

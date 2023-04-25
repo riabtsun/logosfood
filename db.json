@@ -107,5 +107,72 @@
       "title": "У наших курьеров всегда должна быть сдача!",
       "answer": "Мы очень внимательно следим за качеством нашей работы, поэтому, если у вас будут какие-либо замечания или предложения, то обязательно сообщайте их нам"
     }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "image": "./assets/products/dish1.jpg",
+      "title": "Ягненок",
+      "description": "помидор, сыр фета, масло подсолнечное, капуста пекинская, перец сладкий красный, огурцы, оливки без косточек",
+      "price": 620,
+      "weight": 210,
+      "protein": 17.23,
+      "fats": 7.63,
+      "carbohydrates": 22.35,
+      "calories": 234,
+      "category": "meat-meals"
+    },
+    {
+      "id": 2,
+      "image": "./assets/products/dish2.jpg",
+      "title": "Гусь",
+      "description": "Фаршированный яблоками",
+      "price": 450,
+      "weight": 300,
+      "protein": 20,
+      "fats": 8,
+      "carbohydrates": 30,
+      "calories": 250,
+      "category": "grill"
+    },
+    {
+      "id": 3,
+      "image": "./assets/products/dish3.jpg",
+      "title": "Утка",
+      "description": "Фаршированная рисом, курагой и айвой",
+      "price": 790,
+      "weight": 300,
+      "protein": 20,
+      "fats": 8,
+      "carbohydrates": 30,
+      "calories": 300,
+      "category": "fish"
+    },
+    {
+      "id": 4,
+      "image": "./assets/products/dish4.jpg",
+      "title": "Индейка",
+      "description": "Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком",
+      "price": 435,
+      "weight": 360,
+      "protein": 26,
+      "fats": 4,
+      "carbohydrates": 19,
+      "calories": 200,
+      "category": "cold"
+    },
+    {
+      "id": 5,
+      "image": "./assets/products/dish4.jpg",
+      "title": "Слон",
+      "description": "Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком",
+      "price": 190,
+      "weight": 220,
+      "protein": 44,
+      "fats": 6,
+      "carbohydrates": 15,
+      "calories": 350,
+      "category": "hot"
+    }
   ]
 }

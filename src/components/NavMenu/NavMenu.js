@@ -1,44 +1,28 @@
 import React from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import './_navMenu.sass'
-
-const navLinks = [
-  'Холодные закуски',
-  'Горячие закуски',
-  'Мясные блюда',
-  'Супы',
-  'Рыбные блюда',
-  'Гриль меню',
-  'Фирменные блюда',
-  'Напитки',
-]
-
-const link = navLinks.map((link, index) => {
-  return (
-    <SwiperSlide key={index}>
-      <a className="navLink" href={`#` + index}>
-        {link}
-      </a>
-    </SwiperSlide>
-  )
-})
+import { useNavigate } from 'react-router-dom'
+import { menuData } from '../../utils/menuData'
 
 const NavMenu = () => {
+  const navigate = useNavigate()
+
   return (
-    <div className="navSlider">
-      <Swiper
-        spaceBetween={0}
-        slidesPerView={'auto'}
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => console.log(swiper)}
-        autoplay={true}
-        loop={true}
-        pagination={{ clickable: true }}
-      >
-        <>{link}</>
-      </Swiper>
+    <div className="container">
+      <ul className="navList">
+        {menuData.map((link) => {
+          return (
+            <li
+              className="navLink"
+              key={link.en}
+              onClick={() => navigate(`/catalog/${link.en}`)}
+            >
+              {link.ru}
+            </li>
+          )
+        })}
+      </ul>
     </div>
   )
 }
