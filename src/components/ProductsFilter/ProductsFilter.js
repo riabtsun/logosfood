@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay } from 'swiper'
 import 'swiper/swiper.min.css'
@@ -6,18 +6,10 @@ import 'swiper/swiper-bundle.min.css'
 import axios from '../../utils/axios'
 import Title from '../Title/Title'
 import ProductCard from '../ProductCard/ProductCard'
+import { CustomContext } from '../../utils/Context'
 
 const ProductsFilter = ({ title }) => {
-  const [product, setProduct] = useState([])
-
-  useEffect(() => {
-    axios('/products')
-      .then(({ data }) => {
-        setProduct(data)
-      })
-      .catch((err) => console.log(err))
-  }, [])
-
+  const { products } = useContext(CustomContext)
   return (
     <div className="products__filter">
       <div className="container">
@@ -41,7 +33,7 @@ const ProductsFilter = ({ title }) => {
           // className="products__filter-swiper"
         >
           <>
-            {product.map((card) => {
+            {products.map((card) => {
               return (
                 <SwiperSlide key={card.title}>
                   <ProductCard card={card} />

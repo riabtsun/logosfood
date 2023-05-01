@@ -173,6 +173,19 @@
       "carbohydrates": 15,
       "calories": 350,
       "category": "hot"
+    },
+    {
+      "title": "ddsad",
+      "image": "wwds22",
+      "description": "asdas dsa fsdf ",
+      "price": "123",
+      "weight": "456",
+      "protein": "789",
+      "fats": "4",
+      "carbohydrates": "15",
+      "category": "cold",
+      "calories": 3252,
+      "id": 6
     }
   ]
 }
