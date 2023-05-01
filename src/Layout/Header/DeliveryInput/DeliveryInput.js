@@ -1,7 +1,7 @@
-import React from "react";
-import Location from "../../../assets/icnons/Location";
-import Search from "../../../assets/icnons/Search";
-import "./_input.sass";
+import React from 'react'
+import Location from '../../../assets/icons/Location'
+import Search from '../../../assets/icons/Search'
+import './_input.sass'
 const DeliveryInput = () => {
   return (
     <div className="delivery-wrap">
@@ -13,7 +13,7 @@ const DeliveryInput = () => {
       />
       <Search className="input-search" />
     </div>
-  );
-};
+  )
+}
 
-export default DeliveryInput;
+export default DeliveryInput

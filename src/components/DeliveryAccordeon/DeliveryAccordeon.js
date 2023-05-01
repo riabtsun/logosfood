@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react'
-import FaArrow from '../../assets/icnons/FaArrow'
+import FaArrow from '../../assets/icons/FaArrow'
 
 const DeliveryAccordion = ({ item }) => {
   const contentEl = useRef()

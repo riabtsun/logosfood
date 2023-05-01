@@ -21,7 +21,7 @@ const Product = () => {
   return (
     <section className="product">
       <div className="container">
-        <button onClick={() => navigate('-1')}></button>
+        <button onClick={() => navigate('-1')}>Вернуться назад</button>
         <h2>{product.title}</h2>
       </div>
     </section>

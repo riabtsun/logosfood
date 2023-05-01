@@ -1,5 +1,5 @@
 import React from 'react'
-import BuyCart from '../../assets/icnons/BuyCart'
+import BuyCart from '../../assets/icons/BuyCart'
 import { useNavigate } from 'react-router-dom'
 
 const ProductCard = ({ card }) => {

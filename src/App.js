@@ -8,6 +8,7 @@ import Layout from './Layout/Layout'
 import Sales from './pages/Sales/Sales'
 import Delivery from './pages/Delivery/Delivery'
 import Product from './pages/Product/Product'
+import AddProduct from './pages/AddProduct/AddProduct'
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
           <Route path="/sales" element={<Sales />} />
           <Route path="/delivery" element={<Delivery />} />
           <Route path="/catalog/:category" element={<Catalog />} />
-          <Route path="/product/:product" element={<Product />} />
+          <Route path="/product/:id" element={<Product />} />
+          <Route path="/product/add" element={<AddProduct />} />
         </Route>
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />

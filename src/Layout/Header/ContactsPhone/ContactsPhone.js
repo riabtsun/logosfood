@@ -1,6 +1,6 @@
-import React from "react";
-import "./_contactsPhone.sass";
-import Calling from "../../../assets/icnons/Calling";
+import React from 'react'
+import './_contactsPhone.sass'
+import Calling from '../../../assets/icons/Calling'
 const ContactsPhone = () => {
   return (
     <div className="contactsPhone">
@@ -12,7 +12,7 @@ const ContactsPhone = () => {
         </a>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ContactsPhone;
+export default ContactsPhone
